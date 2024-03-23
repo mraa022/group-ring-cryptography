@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .text-area{
+            margin: 10px;
+            width: 100%;
+            height: 10em;
+            margin-top: auto;
+            text-align: center;
+        }
+        body{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <form action="/" method="post">
+        <h1>Group Ring Cryptography Playground</h1>
+        <label>Plain text</label>
+        <input class="text-area" type="textarea" name="encrypt" placeholder="Enter Plain text" value="{{plain_text}}">
+        <br>
+        <label>Encrypted text</label>
+        <input class="text-area" type="textarea" name="decrypt" placeholder="Enter Encrypted text" value="{{encrypted_text}}">
+        
+        <input type="submit" value="Encrypt" name="submit-btn">
+        <input type="submit" value="Decrypt" name="submit-btn">
+    </form>
+    
+</body>
+</html>
